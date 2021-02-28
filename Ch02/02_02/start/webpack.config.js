@@ -13,7 +13,7 @@ module.exports = {
                 exclude: /(node_modules)/, //don't do this with node modules, that will take forever
                 use: {
                     loader: 'babel-loader',
-                    option: {
+                    options: {
                         presets: ['@babel/preset-env']
                     }
                 }
