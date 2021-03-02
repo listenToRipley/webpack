@@ -8,11 +8,6 @@ module.exports = {
         filename: "main.js",
         path: path.resolve(__dirname, "dist")
     },
-    optimization: {
-      splitChunks: {
-          chunks: 'all'
-      }
-    },
     plugins: [new HtmlWebpackPlugin()],
     devServer: {
         contentBase: path.join(__dirname, "dist"),
