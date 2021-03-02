@@ -9,6 +9,12 @@ module.exports = {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist")
     },
+    optimization: {
+       splitChunks: {
+           chunks: 'all' //look for elements in both bundles and create a "vendor" bundle
+           //example, about and contacts have react, so their have their own bundle
+       }
+    },
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         port: 9000
