@@ -1,17 +1,16 @@
 import React from 'react'
 import { render } from 'react-dom'
-import './style.css'
 
-const Greeting = () => {
+
+const Contact = () => {
     return (
         <div>
-            <h1>Hello from React</h1>
-            <div id="image"></div>
+            <h1>Contact Webpack</h1>
         </div>
     )
 }
 
 render(
-    <Greeting />,
+    <Contact />,
     document.getElementById('target')
 )
