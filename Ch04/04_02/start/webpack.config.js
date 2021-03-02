@@ -4,10 +4,9 @@ module.exports = {
     entry: {
         about: "./src/about.js",
         contact: "./src/contact.js",
-        index: "./src/index.js"
     },
     output: {
-        filename: "main.js",
+        filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist")
     },
     devServer: {
