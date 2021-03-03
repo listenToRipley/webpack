@@ -8,6 +8,9 @@ module.exports = {
         filename: "main.js",
         path: path.resolve(__dirname, "dist")
     },
+    optimization: {
+        minimizer: [new UglifyJsPlugin()]
+    },
     plugins: [new HtmlWebpackPlugin()],
     devServer: {
         contentBase: path.join(__dirname, "dist"),
